@@ -5,6 +5,10 @@ class Point {
   y = 0;
   color = "red";
 
+  constructor() {
+    this.color = getRandomColor();
+  }
+
   distance() {
     return this.x + this.y;
   }
