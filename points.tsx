@@ -6,6 +6,10 @@ class Point {
     distance() {
         return this.x + this.y;
     }
+
+    distanceTimes(n: number) {
+        return this.distance() * n;
+    }
 }
 
 const s1 = "shalom";
@@ -23,6 +27,7 @@ console.log(p1);
 console.log(p1.x);  // p1.x is an instance variable
 console.log(p1.color);
 console.log(p1.distance());
+console.log(p1.distanceTimes(10));
 
 console.log("done.")
 
