@@ -1,11 +1,13 @@
 import getRandomColor from "./colors";
 
 class Point {
-  x = 0; // property
-  y = 0;
+  x = 123; // property
+  y = 456;
   color = "red";
 
-  constructor() {
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
     this.color = getRandomColor();
   }
 
@@ -18,10 +20,10 @@ class Point {
   }
 }
 
-const p1 = new Point(); // p1 is an instance of Point
+const p1 = new Point(50, 97); // p1 is an instance of Point
 console.log(p1);
 
-const p2 = new Point();
+const p2 = new Point(300, 500);
 console.log(p2);
 
 p1.x = 100;
@@ -33,9 +35,10 @@ console.log(p1.distance());
 console.log(p1.distanceTimes(10));
 
 for (let i = 0; i < 10; i++) {
-  const p = new Point();
+  const p = new Point(i * 100, i * 200);
   console.log({ i, p });
 }
 
 console.log(getRandomColor());
+
 console.log("done.");
