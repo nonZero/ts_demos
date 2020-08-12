@@ -12,9 +12,6 @@ class Point {
     }
 }
 
-const s1 = "shalom";
-const s2 = "bye";
-
 const p1 = new Point()  // p1 is an instance of Point
 console.log(p1);
 
@@ -28,6 +25,12 @@ console.log(p1.x);  // p1.x is an instance variable
 console.log(p1.color);
 console.log(p1.distance());
 console.log(p1.distanceTimes(10));
+
+for (let i = 0; i < 10; i++) {
+    const p = new Point()
+    console.log({i, p});
+}
+
 
 console.log("done.")
 
