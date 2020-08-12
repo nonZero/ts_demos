@@ -1,6 +1,7 @@
 class Point {
-    public x = 0;
-    public y = 0;
+    x = 0;
+    y = 0;
+    color = "red";
 }
 
 const s1 = "shalom";
@@ -15,6 +16,8 @@ console.log(p2);
 p1.x = 100;
 p1.y = 200;
 console.log(p1);
+console.log(p1.x);
+console.log(p1.color);
 
 console.log("done.")
 
