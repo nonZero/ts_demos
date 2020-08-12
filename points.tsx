@@ -1,8 +1,8 @@
 import getRandomColor from "./colors";
 
 class Point {
-  x = 123; // property
-  y = 456;
+  x: number; // property
+  y: number;
   color = "red";
 
   constructor(x: number, y: number) {
