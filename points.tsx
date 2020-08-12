@@ -1,13 +1,15 @@
 import getRandomColor from "./colors";
 
 class Point {
-  x: number; // property
+  x: number;
   y: number;
   color = "red";
+  large: boolean;
 
   constructor(x: number, y: number) {
     this.x = x;
     this.y = y;
+    this.large = x > 100 || y > 100;
     this.color = getRandomColor();
   }
 
